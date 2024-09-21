@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dstar Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0eee757eb8.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <button id="go-bottom" onclick="scrollToBottom()" style="display: none;">
+        <i class="fas fa-arrow-down"></i>
+    </button>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                 <h1 id="JDVerse"><Span>JD</Span> Verse</h1>
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="heder-text">
+                <h1>Hi i'm <span>Dileep Kumar.</span></h1>
+                <p>Electronics & Communications Engineer</p>
+            </div>
+        </div>
+    </div>
+<!-----------About------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/photo_6302800993359871407_x.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p class="about-content">Hi... I’m Dileep Kumar, a motivated Java Full Stack Developer with a strong passion for creating the engaging and efficient web applications. I have a solid foundation in Java, HTML, CSS, JavaScript, and frameworks like Spring and Hibernate, along with a strong knowledge of MySQL.
+                        As a recent graduate from KBNCE with a degree in Electronics and Communication Engineering. I am seeking a challenging career with an organization where I can apply my skills, acquire new knowledge, and grow professionally. My goal is to contribute effectively and prove myself as a valuable asset to the team.                        
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    </div>
+                    <div class="tab-contains active-tab" id="Education">
+                        <ul>
+                            <li><span>SSLC (2016)</span><br>Nethaji Higher School Chandapur (75.68%)</li>
+                            <li><span>PUC (2018)</span><br>Saptagiri Independent PU College Bidar (72%)</li>
+                            <li><span>DEGREE (2022)</span><br>Khaja Banda Nawaz College of Engineering Kalaburagi (61%)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="Skills">
+                        <ul>
+                            <li><span>UI/UX (USER INTERFACE)</span><br>HTML, CSS, JavaScript</li>
+                            <li><span>BUSINESS LOGIC & SERVER SIDE SCRIPTING</span><br>Core Java, Advanced Java, JDBC, Spring Framework, Hibernate</li>
+                            <li><span>DATABASE & SERVER MANAGEMENT</span><br>SQL, MYSQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contains" id="Experience">
+                        <ul>
+                            <li><span>2022-2023</span><br>JAVA Full Stack Developer training at JSpiders</li>
+                            <li><span>2023</span><br>Part Time Data Operator at Sumukha Technoloies Pvt.ltd</li>
+                            <li><span>2023-2024</span><br>IT Consultant at FHPL (Family Health Plan Insurance Pvt.ltd.)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------- Services ----------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web Design</h1>
+                    <p>As a Full Stack developer, I specialize in crafting the visual and interactive elements of websites and web applications. I utilize HTML, CSS, and JavaScript to build user-friendly interfaces that deliver seamless experiences across all devices.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h1>Java Development</h1>
+                    <p>As a recent graduate with a passion for Java development, I am excited to embark on my journey in the tech industry. I have a solid understanding of Core Java concepts and Advance Java concepts have completed projects that involved building applications and working with frameworks like Hibernate and Spring.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h1>Database</h1>
+                    <p>A foundational understanding of database development. I am familiar with SQL and MySQL for designing and managing databases through various academic projects.</p>
+                    <!-- <a href="#">Learn more</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------- Projects ------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/atm-3077727_1280.png">
+                    <div class="layer">
+                        <h3>Bank_Management App</h3>
+                        <p>Created Banking Management System, a Java-based application designed to provide a comprehensive solution for managing user accounts, transactions, and banking operations. This system enables users to register, log in, and perform various banking activities, such as creating accounts, debiting and crediting funds, transferring money, and checking balances.</p>
+                        <a href="https://github.com/Dstar2000/Bank_Management"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/computer-1019743_1280_prev_ui.png">
+                    <div class="layer">
+                        <h3>Calculator App</h3>
+                        <p>Created Calculator application that demonstrates the concept of multi-level inheritance in Java while providing basic arithmetic operations. The program allows users to perform addition, subtraction, multiplication, division, and remainder calculations through a simple command-line interface.</p>
+                        <a href="https://github.com/Dstar2000/Calculator"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/reading-7334749_1920_prev_ui.png">
+                    <div class="layer">
+                        <h3>LinkedIn Profile</h3>
+                        <p>Check out my LinkedIn to connect and see my latest projects, skills, and insights in software development.</p>
+                        <a href="https://www.linkedin.com/in/dileep-kumar-7509b2256/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Dstar2000" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!------------------------ Contact ------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact-Me</h1>
+                    <p class="Mail"> <i class="fa-solid fa-paper-plane"></i> nayakdileepkumar9606@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone-square-alt"></i> 6362943532</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/dileepkumar.chavan.77"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/DileepKuma66440?t=-FHrGOF_LUh3vlMfB49adA&s=09"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/d_i_l_e_e_p_c_h_a_v_a_n/?igsh=OXZ2dGF4MmdxNm04"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/dileep-kumar-7509b2256/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="Resume/Black White Minimalist CV Resume (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Write your message...."></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 JDVerse. Made With <i class="fas fa-heart"></i> by Dileep Kumar</p>
+        </div>
+    </div>
+
+    <button id="go-top" onclick="scrollToTop()" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </button> 
+
+    <!--------- Go To Nav bar pages ----------->
+
+    <script>
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontains=document.getElementsByClassName("tab-contains");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontain of tabcontains){
+                tabcontain.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("side-menu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+
+
+    </script>
+
+<!--------------- Message sent --------------->
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwnVPQtyxVF1gsvYY1oFFprFnmDFw_eZzKLka3HtRttKj5qHhm6tJchlyqJD7L6YLJo/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent Successfully...😊"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+<!-- ------------- Scroll up down ------------- -->
+
+<script>
+    window.onscroll = function() {
+        var topButton = document.getElementById("go-top");
+        var bottomButton = document.getElementById("go-bottom");
+        
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            topButton.style.display = "block"; 
+        } else {
+            topButton.style.display = "none"; 
+        }
+
+        if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 20) {
+            bottomButton.style.display = "none"; 
+        } else {
+            bottomButton.style.display = "block"; 
+        }
+    };
+
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function scrollToBottom() {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
